@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Web Design</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f8ff;
+        }
+
+        header, footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav {
+            background-color: #34495e;
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            margin: 0 0.75rem;
+            font-weight: bold;
+        }
+
+        section {
+            margin: 1rem;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        /* Centering form */
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-top: 1rem;
+        }
+
+        form input, form textarea, form select, form button {
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        table, th, td {
+            border: 1px solid #34495e;
+            padding: 0.75rem;
+        }
+
+        iframe {
+            width: 100%;
+            height: 250px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Web Design Practice</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#form">Form</a>
+        <a href="#table">Table</a>
+        <a href="#media">Media</a>
+    </nav>
+
+    <section id="about">
+        <h2>About This Page</h2>
+        <p>I'm learning how to create web pages using HTML and CSS. This page includes sections for forms, tables, and media content. The styles are basic, but I'm adding my own touch!</p>
+    </section>
+
+    <section id="form" class="form-container">
+        <form>
+            <h2>Contact Me</h2>
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="Enter your name" />
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com" />
+
+            <label for="message">Your Message</label>
+            <textarea id="message" rows="4" placeholder="Write something..."></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section id="table">
+        <h2>Sample Data Table</h2>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>Books</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Notebooks</td>
+                <td>5</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="media">
+        <h2>Embedded Content</h2>
+        <iframe src="https://www.wikipedia.org"></iframe>
+        <p>This is an iframe showing the Wikipedia homepage.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Web Practice. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
